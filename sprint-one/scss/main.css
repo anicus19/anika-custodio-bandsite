@@ -1,0 +1,951 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Avenir Next Regular";
+  src: url("../assets/font/AvenirNextProLT/AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "Avenir Next Demi";
+  src: url("../assets/font/AvenirNextProLT/AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: "Avenir Next Bold";
+  src: url("../assets/font/AvenirNextProLT/AvenirNextLTPro-Bold.otf");
+}
+
+html {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Avenir Next Regular", sans-serif;
+  color: #323232;
+  font-size: 16px;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container, .banner__title, .footer__container, .footer__contact-info {
+  max-width: 1440px;
+}
+
+.header {
+  background-color: #323232;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__container {
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header__container {
+    padding-left: 10%;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  min-width: 45%;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    min-width: 25%;
+    margin-top: 10px;
+    height: 20px;
+  }
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 5%;
+    margin-top: 15px;
+  }
+}
+
+.header__nav-item {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav-item {
+    width: 15%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header__nav-item {
+    width: 13%;
+  }
+}
+
+.header__nav-item a {
+  font-size: 1.5rem;
+  font-family: "Avenir Next Regular";
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  padding-bottom: 15px;
+  color: #afafaf;
+  border-bottom: 5px solid #323232;
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav-item a {
+    font-size: 1rem;
+  }
+}
+
+.header__nav-item a:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  font-family: "Avenir Next Demi";
+}
+
+.banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(RGBA(50, 50, 50, 0.2))), url(../assets/Images/concert-1.jpg);
+  background-image: linear-gradient(RGBA(50, 50, 50, 0.2)), url(../assets/Images/concert-1.jpg);
+  width: 100%;
+  height: 335px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: "Avenir Next Bold";
+  font-size: 1.4rem;
+  line-height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 425px;
+    font-size: 1.9rem;
+    line-height: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner {
+    margin: 0 auto;
+    padding-left: 10%;
+    height: 500px;
+  }
+}
+
+.banner__title {
+  text-align: left;
+  color: #ffffff;
+  width: 100%;
+}
+
+.about {
+  margin-top: 0;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.about__title {
+  text-align: left;
+  font-family: "Avenir Next Bold";
+  font-size: 2.5rem;
+  padding-top: 50px;
+  padding-left: 5%;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about__title {
+    padding-left: 5%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about__title {
+    padding-left: 10%;
+  }
+}
+
+.about__image {
+  height: auto;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .about__image {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about__image {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+.about__quote {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Avenir Next Demi";
+  font-size: 1.8rem;
+  line-height: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__quote {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "Avenir Next Bold";
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about__quote {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__quote span {
+    font-size: 1rem;
+  }
+}
+
+.about__band-member-name {
+  font-family: "Avenir Next Demi";
+  font-size: 2rem;
+  margin-top: 45px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .about__band-member-name {
+    padding-left: 5%;
+    font-size: 1.5rem;
+    font-family: "Avenir Next Bold";
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about__band-member-name {
+    padding-left: 15%;
+  }
+}
+
+.about__band-more-info {
+  margin: 0 auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 1.4rem;
+  line-height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__band-more-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about__band-more-info {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+}
+
+.about__band-info {
+  padding: 0 3%;
+}
+
+.gallery {
+  width: 100%;
+  background-color: #fafafa;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.gallery__title {
+  text-align: left;
+  font-family: "Avenir Next Bold";
+  font-size: 2.7rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    padding-left: 2%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery__title {
+    padding-left: 0.5%;
+  }
+}
+
+.gallery__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery__image {
+  height: auto;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.gallery__image:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__image {
+    width: 33.33%;
+    height: auto;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery__image {
+    width: 32.33%;
+    height: auto;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #323232;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__container {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.footer__title {
+  margin-top: 0;
+  padding-top: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Avenir Next Bold";
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__title {
+    width: 300px;
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__title {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 3rem;
+    width: 33.33%;
+  }
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+    width: 33.33%;
+    margin-top: 25px;
+  }
+}
+
+.footer__social img {
+  margin: 0 30px 20px 30px;
+  height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social img {
+    height: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.footer__band-logo {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__band-logo {
+    width: 150px;
+    visibility: visible;
+    margin-left: auto;
+    margin-right: 5%;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__band-logo {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+.footer__contact-info {
+  list-style-type: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__contact-info {
+    width: 65%;
+    padding-left: 10%;
+  }
+}
+
+.footer__contact-name {
+  font-family: "Avenir Next Demi";
+  font-size: 1.6rem;
+  line-height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contact-name {
+    font-size: 1rem;
+    line-height: 35px;
+    line-height: 20px;
+  }
+}
+
+.footer__more-info {
+  font-size: 1rem;
+}
+
+.footer__copyright {
+  margin-top: 50px;
+  padding-left: 5%;
+  padding-bottom: 60px;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__copyright {
+    padding-left: 10%;
+  }
+}
+
+.footer__copyright p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__copyright p {
+    padding-right: 6px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
