@@ -1,0 +1,36 @@
+//
+// BANNER
+//
+
+.banner {
+  background-image: linear-gradient(RGBA(50, 50, 50, 0.2)),
+    url(../assets/Images/concert-1.jpg);
+  width: 100%;
+  height: 335px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: $font-family-bold;
+  font-size: 1.4rem;
+  line-height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  @include tablet {
+    height: 425px;
+    font-size: 1.9rem;
+    line-height: 80px;
+  }
+  @include desktop {
+    margin: 0 auto;
+    padding-left: 10%;
+    height: 500px;
+  }
+  &__title {
+    @extend .container;
+    text-align: left;
+    color: $banner-title-color;
+    width: 100%;
+  }
+}
