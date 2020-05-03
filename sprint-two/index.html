@@ -23,7 +23,7 @@
         </ul>
       </div>
     </header>
-    <section class="banner">
+    <section class="banner banner--index">
       <h1 class="banner__title">
         Gaspard Auge & <br />
         Xavier de Rosnay
@@ -118,33 +118,40 @@
       </div>
     </section>
     <section class="comments">
-      <h2 class="">Join the Conversation</h2>
-      <form class="comments__form">
+      <h2 class="comments__title">Join the Conversation</h2>
+
+      <div class="comments__user-input">
         <div>
-          <label for="name">NAME</label>
-          <input
-            id="form__name"
-            class="form__name"
-            type="text"
-            name="name"
-            placeholder="Name"
-          />
+          <img src="./assets/Images/Mohan-muruge.jpg" alt="" />
         </div>
-        <div>
-          <label>COMMENT</label>
-          <textarea
-            id="form__comment"
-            class="form__comment"
-            rows="15"
-            cols="30"
-            placeholder="Add a new comment"
-          ></textarea>
-        </div>
-        <button id="form__button" class="button" type="submit">COMMENT</button>
-      </form>
-      <div class="comments__history">
-        <!-- existing comments -->
+        <form class="comments__form">
+          <div class="form__name-input">
+            <label for="form__name">NAME</label>
+            <input
+              id="form__name"
+              class="form__name"
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form__comment-input">
+            <label for="form__comment">COMMENT</label>
+            <textarea
+              id="form__comment"
+              class="form__comment"
+              rows="5"
+              cols="30"
+              placeholder="Add a new comment"
+            ></textarea>
+          </div>
+          <button id="form__button" class="form__button button" type="submit">COMMENT</button>
+        </form>
       </div>
+      
+      <div class="comments__history">
+        <!-- existing comments
+      </div> -->
     </section>
     <footer class="footer">
       <div class="container footer__container">

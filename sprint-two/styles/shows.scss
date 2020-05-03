@@ -28,5 +28,60 @@ body {
 }
 
 @import "./partials/header";
+@import "./partials/banner";
+
+.show {
+  &__title {
+    margin-left: 5%;
+    font-family: $font-family-bold;
+    font-size: 2rem;
+  }
+  &__list-item {
+    list-style-type: none;
+    border-bottom: 2px solid $shows-border-color;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  &__date,
+  &__venue,
+  &__location {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__date {
+    font-family: $font-family-demi;
+  }
+  &__date::before,
+  &__venue::before,
+  &__location::before {
+    color: $shows-label-color;
+    font-family: $font-family-demi;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  &__date::before {
+    content: "date";
+  }
+  &__venue::before {
+    content: "venue";
+  }
+  &__location::before {
+    content: "location";
+  }
+  &__button {
+    width: 100%;
+    background-color: $shows-button-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $shows-button-text;
+    font-family: $font-family-demi;
+    border-radius: 7px;
+  }
+}
 
 @import "./partials/footer";

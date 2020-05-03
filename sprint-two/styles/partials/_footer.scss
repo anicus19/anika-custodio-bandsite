@@ -23,10 +23,10 @@
     padding-left: 5%;
     padding-right: 5%;
     font-family: $font-family-bold;
-    font-size: 4rem;
+    font-size: 2rem;
     @include tablet {
       width: 300px;
-      font-size: 2rem;
+      // font-size: 2rem;
       padding-top: 50px;
       padding-right: 20px;
     }
@@ -48,12 +48,12 @@
     }
   }
   &__social img {
-    margin: 0 30px 20px 30px;
+    margin: 0 30px 20px 10px;
     // margin-top: 0;
     // margin-right: 5%;
     // margin-bottom: 5%;
     // margin-left: 5%;
-    height: 40px;
+    height: 30px;
     // width: 33.3333%;
     @include tablet {
       height: 20px;
@@ -104,8 +104,8 @@
 
   &__contact-name {
     font-family: $font-family-demi;
-    font-size: 1.6rem;
-    line-height: 35px;
+    font-size: 1.2rem;
+    line-height: 25px;
     @include tablet {
       font-size: 1rem;
       line-height: 35px;
@@ -115,13 +115,14 @@
 
   &__more-info {
     font-size: 1rem;
+    line-height: 25px;
   }
 
   &__copyright {
     margin-top: 50px;
     padding-left: 5%;
     padding-bottom: 60px;
-    font-size: 1.4rem;
+    font-size: 1rem;
     @include tablet {
       display: flex;
     }

@@ -3,16 +3,14 @@
 //
 
 .banner {
-  background-image: linear-gradient(RGBA(50, 50, 50, 0.2)),
-    url(../assets/Images/concert-1.jpg);
   width: 100%;
   height: 335px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   font-family: $font-family-bold;
-  font-size: 1.4rem;
-  line-height: 55px;
+  font-size: 1rem;
+  line-height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,3 +32,68 @@
     width: 100%;
   }
 }
+
+.banner--index {
+  background-image: linear-gradient(RGBA(50, 50, 50, 0.2)),
+    url(../assets/Images/concert-1.jpg);
+}
+
+.banner--shows {
+  background-image: linear-gradient(RGBA(50, 50, 50, 0.3)),
+    url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
+  height: 500px;
+}
+
+.banner p {
+  color: $banner-title-color;
+  font-family: $font-family-demi;
+  font-size: 1rem;
+}
+
+.banner--shows iframe {
+  margin: 25px 0;
+  border-radius: 7%;
+  width: 95%;
+  height: auto;
+}
+
+// // .banner audio {
+// //   width: 100%;
+// //   margin-left: 0;
+// width="100%"
+// height="300"
+// scrolling="no"
+// frameborder="no"
+// allow="autoplay"
+// // }
+
+// <div
+//         style="
+//           font-size: 10px;
+//           color: #cccccc;
+//           line-break: anywhere;
+//           word-break: normal;
+//           overflow: hidden;
+//           white-space: nowrap;
+//           text-overflow: ellipsis;
+//           font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+//             Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+//           font-weight: 100;
+//         "
+//       >
+//         <a
+//           href="https://soundcloud.com/linkin_park"
+//           title="LINKIN_PARK"
+//           target="_blank"
+//           style="color: #cccccc; text-decoration: none;"
+//           >LINKIN_PARK</a
+//         >
+//         ·
+//         <a
+//           href="https://soundcloud.com/linkin_park/numb"
+//           title="Numb"
+//           target="_blank"
+//           style="color: #cccccc; text-decoration: none;"
+//           >Numb</a
+//         >
+//       </div>

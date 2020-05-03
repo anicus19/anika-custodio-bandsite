@@ -31,7 +31,11 @@ const showArray = [
   },
 ];
 
-const showList = document.querySelector(".shows");
+const showList = document.querySelector(".show");
+const showTitle = document.createElement("h2");
+showTitle.classList.add("show__title");
+showTitle.innerText = "Shows";
+showList.appendChild(showTitle);
 
 showArray.forEach(function (item, index) {
   const ul = document.createElement("ul");

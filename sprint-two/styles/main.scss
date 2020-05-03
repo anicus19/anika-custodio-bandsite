@@ -31,4 +31,137 @@ body {
 @import "./partials/banner";
 @import "./partials/about";
 @import "./partials/gallery";
+
+.comments {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  &__title {
+    font-size: 1.7rem;
+    font-family: $font-family-bold;
+  }
+  &__form {
+    width: 82%;
+  }
+  &__form label {
+    color: $shows-label-color;
+    font-family: $font-family-demi;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  & img {
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    border-radius: 50%;
+  }
+  &__user-input {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $shows-border-color;
+    width: 100%;
+  }
+}
+
+.form__name-input,
+.form__comment-input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  padding-left: 5%;
+}
+
+.form__name {
+  padding: 20px 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+.form__comment {
+  padding: 20px 10px;
+  border: 2px solid $shows-border-color;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.form__button {
+  width: 95%;
+  background-color: $shows-button-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $shows-button-text;
+  font-family: $font-family-demi;
+  border-radius: 7px;
+  margin-left: 5%;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 25px;
+  border-bottom: 2px solid $shows-border-color;
+}
+
+.grey-circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.list-item {
+  width: 80%;
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.97rem;
+  padding-bottom: 25px;
+  padding-top: 0;
+}
+// .list-item li:first-child {
+//   display: inline-block;
+//   background-color: #e1e1e1;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+// }
+
+.list-item__name,
+.list-item__date {
+  display: inline-block;
+}
+
+// .list-item li:nth-child(2) {
+//   display: inline-block;
+// }
+
+// .list-item li:nth-child(3) {
+//   display: inline-block;
+// }
+
+.list-item__name {
+  font-family: $font-family-demi;
+  width: 65%;
+  text-align: left;
+  // padding-left: 15px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+}
+
+.list-item__date {
+  color: #afafaf;
+  width: 30%;
+  text-align: right;
+}
+
+.list-item__comment {
+  line-height: 20px;
+  padding-left: 5%;
+}
+
+// .list-item li:last-child {
+
+// }
+
 @import "./partials/footer";

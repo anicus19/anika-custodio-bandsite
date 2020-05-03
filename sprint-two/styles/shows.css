@@ -377,7 +377,7 @@ body {
           box-sizing: border-box;
 }
 
-.container, .footer__container, .footer__contact-info {
+.container, .banner__title, .footer__container, .footer__contact-info {
   max-width: 1440px;
 }
 
@@ -478,7 +478,7 @@ body {
 }
 
 .header__nav-item a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Avenir Next Regular";
   display: inline-block;
   width: 100%;
@@ -498,6 +498,135 @@ body {
   color: #ffffff;
   border-color: #ffffff;
   font-family: "Avenir Next Demi";
+}
+
+.banner {
+  width: 100%;
+  height: 335px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: "Avenir Next Bold";
+  font-size: 1rem;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 425px;
+    font-size: 1.9rem;
+    line-height: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner {
+    margin: 0 auto;
+    padding-left: 10%;
+    height: 500px;
+  }
+}
+
+.banner__title {
+  text-align: left;
+  color: #ffffff;
+  width: 100%;
+}
+
+.banner--index {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(RGBA(50, 50, 50, 0.2))), url(../assets/Images/concert-1.jpg);
+  background-image: linear-gradient(RGBA(50, 50, 50, 0.2)), url(../assets/Images/concert-1.jpg);
+}
+
+.banner--shows {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(RGBA(50, 50, 50, 0.3))), url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
+  background-image: linear-gradient(RGBA(50, 50, 50, 0.3)), url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
+  height: 500px;
+}
+
+.banner p {
+  color: #ffffff;
+  font-family: "Avenir Next Demi";
+  font-size: 1rem;
+}
+
+.banner--shows iframe {
+  margin: 25px 0;
+  border-radius: 7%;
+  width: 95%;
+  height: auto;
+}
+
+.show__title {
+  margin-left: 5%;
+  font-family: "Avenir Next Bold";
+  font-size: 2rem;
+}
+
+.show__list-item {
+  list-style-type: none;
+  border-bottom: 2px solid #e1e1e1;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+.show__date, .show__venue, .show__location {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.show__date {
+  font-family: "Avenir Next Demi";
+}
+
+.show__date::before, .show__venue::before, .show__location::before {
+  color: #afafaf;
+  font-family: "Avenir Next Demi";
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.show__date::before {
+  content: "date";
+}
+
+.show__venue::before {
+  content: "venue";
+}
+
+.show__location::before {
+  content: "location";
+}
+
+.show__button {
+  width: 100%;
+  background-color: #323232;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-family: "Avenir Next Demi";
+  border-radius: 7px;
 }
 
 .footer {
@@ -530,13 +659,12 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   font-family: "Avenir Next Bold";
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .footer__title {
     width: 300px;
-    font-size: 2rem;
     padding-top: 50px;
     padding-right: 20px;
   }
@@ -570,8 +698,8 @@ body {
 }
 
 .footer__social img {
-  margin: 0 30px 20px 30px;
-  height: 40px;
+  margin: 0 30px 20px 10px;
+  height: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -630,8 +758,8 @@ body {
 
 .footer__contact-name {
   font-family: "Avenir Next Demi";
-  font-size: 1.6rem;
-  line-height: 35px;
+  font-size: 1.2rem;
+  line-height: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -644,13 +772,14 @@ body {
 
 .footer__more-info {
   font-size: 1rem;
+  line-height: 25px;
 }
 
 .footer__copyright {
   margin-top: 50px;
   padding-left: 5%;
   padding-bottom: 60px;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {

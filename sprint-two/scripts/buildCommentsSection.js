@@ -30,14 +30,18 @@ function displayComment(commentArray) {
   commentHistory.innerHTML = "";
 
   commentArray.forEach(function (item, index) {
-    const ul = document.createElement("ul");
-    ul.classList.add("list-item");
-    commentHistory.appendChild(ul);
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("wrapper");
+    commentHistory.appendChild(wrapper);
 
-    const greyCircle = document.createElement("li");
+    const greyCircle = document.createElement("div");
     greyCircle.classList.add("grey-circle");
     greyCircle.innerHTML = "";
-    ul.appendChild(greyCircle);
+    wrapper.appendChild(greyCircle);
+
+    const ul = document.createElement("ul");
+    ul.classList.add("list-item");
+    wrapper.appendChild(ul);
 
     const nameOnComment = document.createElement("li");
     nameOnComment.classList.add("list-item__name");
