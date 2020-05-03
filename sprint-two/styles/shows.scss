@@ -31,10 +31,13 @@ body {
 @import "./partials/banner";
 
 .show {
+  margin-bottom: 45px;
   &__title {
     margin-left: 5%;
     font-family: $font-family-bold;
     font-size: 2rem;
+    margin-top: 0;
+    padding-top: 25px;
   }
   &__list-item {
     list-style-type: none;

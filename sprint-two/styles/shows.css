@@ -568,10 +568,16 @@ body {
   height: auto;
 }
 
+.show {
+  margin-bottom: 45px;
+}
+
 .show__title {
   margin-left: 5%;
   font-family: "Avenir Next Bold";
   font-size: 2rem;
+  margin-top: 0;
+  padding-top: 25px;
 }
 
 .show__list-item {
