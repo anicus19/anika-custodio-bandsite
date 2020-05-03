@@ -561,10 +561,15 @@ body {
   }
 }
 
+.banner--shows .banner__title {
+  width: 85%;
+}
+
 @media screen and (min-width: 768px) {
   .banner--shows .banner__title {
     margin-top: 0;
     margin-bottom: 0;
+    width: 80%;
   }
 }
 
@@ -595,6 +600,37 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .banner--shows iframe {
+    width: 50%;
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 10%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .about {
   margin-top: 0;
   width: 100%;
@@ -621,6 +657,7 @@ body {
 @media screen and (min-width: 1440px) {
   .about__title {
     padding-left: 10%;
+    font-size: 3rem;
   }
 }
 
@@ -773,6 +810,7 @@ body {
 @media screen and (min-width: 1440px) {
   .gallery__title {
     padding-left: 0.5%;
+    font-size: 3rem;
   }
 }
 
@@ -829,7 +867,7 @@ body {
 }
 
 .comments__title {
-  font-size: 1.7rem;
+  font-size: 1.69rem;
   font-family: "Avenir Next Bold";
 }
 
@@ -842,6 +880,7 @@ body {
 @media screen and (min-width: 1440px) {
   .comments__title {
     padding-left: 6%;
+    font-size: 3rem;
   }
 }
 

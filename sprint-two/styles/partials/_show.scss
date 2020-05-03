@@ -1,0 +1,106 @@
+.show {
+  margin-bottom: 45px;
+  @extend .container;
+  @include desktop {
+    display: flex;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__title {
+    margin-left: 5%;
+    font-family: $font-family-bold;
+    font-size: 2rem;
+    margin-top: 0;
+    padding-top: 25px;
+    @include desktop {
+      width: 20%;
+      font-size: 3rem;
+    }
+  }
+  &__list-item {
+    list-style-type: none;
+    border-bottom: 2px solid $shows-border-color;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-top: 10px;
+    @include tablet {
+      display: flex;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+  &__date,
+  &__venue,
+  &__location {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      width: 25%;
+    }
+  }
+  &__date {
+    font-family: $font-family-demi;
+  }
+  &__date::before,
+  &__venue::before,
+  &__location::before {
+    color: $shows-label-color;
+    font-family: $font-family-demi;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__date::before {
+    content: "date";
+  }
+  &__venue::before {
+    content: "venue";
+  }
+  &__location::before {
+    content: "location";
+  }
+  &__button {
+    width: 100%;
+    background-color: $shows-button-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $shows-button-text;
+    font-family: $font-family-demi;
+    border-radius: 7px;
+    @include tablet {
+      width: 25%;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.show ul:nth-child(2),
+.show ul:nth-child(3),
+.show ul:nth-child(4),
+.show ul:nth-child(5),
+.show ul:nth-child(6) {
+  .show__date::before,
+  .show__venue::before,
+  .show__location::before {
+    @include tablet {
+      visibility: hidden;
+    }
+  }
+}
+
+.show div {
+  @include desktop {
+    width: 80%;
+  }
+}

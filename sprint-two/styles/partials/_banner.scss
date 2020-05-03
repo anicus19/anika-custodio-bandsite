@@ -48,9 +48,11 @@
 }
 
 .banner--shows .banner__title {
+  width: 85%;
   @include tablet {
     margin-top: 0;
     margin-bottom: 0;
+    width: 80%;
   }
 }
 .banner p {
@@ -71,5 +73,24 @@
   height: 125px;
   @include tablet {
     width: 50%;
+  }
+  @include desktop {
+    width: 50%;
+    margin-bottom: 18px;
+  }
+}
+
+.banner-wrapper {
+  @include desktop {
+    display: flex;
+    padding-right: 10%;
+    align-items: flex-end;
+  }
+}
+
+.banner__title {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
   }
 }
