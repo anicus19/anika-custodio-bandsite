@@ -43,11 +43,20 @@ body {
     @include tablet {
       font-size: 2rem;
     }
+    @include desktop {
+      padding-left: 6%;
+    }
   }
   &__form {
     width: 82%;
     display: flex;
     flex-direction: column;
+    @include tablet {
+      width: 95%;
+    }
+    @include desktop {
+      width: 80%;
+    }
   }
   &__form label {
     color: $shows-label-color;
@@ -72,11 +81,17 @@ body {
       width: 80%;
       margin: 0 auto;
     }
+    @include desktop {
+      width: 56%;
+    }
   }
   &__history {
     @include tablet {
       width: 80%;
       margin: 0 auto;
+    }
+    @include desktop {
+      width: 70%;
     }
   }
 }
@@ -120,6 +135,9 @@ body {
   @include tablet {
     width: 50%;
   }
+  @include desktop {
+    width: 30%;
+  }
 }
 
 .wrapper {
@@ -127,6 +145,10 @@ body {
   width: 100%;
   padding-top: 25px;
   border-bottom: 2px solid $shows-border-color;
+  @include desktop {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .grey-circle {
@@ -139,7 +161,7 @@ body {
 }
 
 .list-item {
-  width: 95%;
+  width: 85%;
   list-style-type: none;
   padding-left: 0;
   font-size: 0.97rem;

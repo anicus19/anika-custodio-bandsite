@@ -377,7 +377,7 @@ body {
           box-sizing: border-box;
 }
 
-.container, .banner__title, .footer__container, .footer__contact-info {
+.container, .banner__title, .show, .footer__container, .footer__contact-info {
   max-width: 1440px;
 }
 
@@ -557,7 +557,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .banner--shows {
-    height: 800px;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner--shows .banner__title {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -565,13 +572,21 @@ body {
   color: #ffffff;
   font-family: "Avenir Next Demi";
   font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .banner p {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
 }
 
 .banner--shows iframe {
   margin: 25px 0;
-  border-radius: 7%;
+  border-radius: 5px;
   width: 95%;
-  height: auto;
+  height: 125px;
 }
 
 @media screen and (min-width: 768px) {
@@ -584,12 +599,32 @@ body {
   margin-bottom: 45px;
 }
 
+@media screen and (min-width: 1440px) {
+  .show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 .show__title {
   margin-left: 5%;
   font-family: "Avenir Next Bold";
   font-size: 2rem;
   margin-top: 0;
   padding-top: 25px;
+}
+
+@media screen and (min-width: 1440px) {
+  .show__title {
+    width: 20%;
+    font-size: 3rem;
+  }
 }
 
 .show__list-item {
@@ -678,22 +713,30 @@ body {
   }
 }
 
-.show ul:nth-child(3) .show__date::before,
-.show ul:nth-child(3) .show__venue::before,
-.show ul:nth-child(3) .show__location::before,
-.show ul:nth-child(4) .show__date::before,
-.show ul:nth-child(4) .show__venue::before,
-.show ul:nth-child(4) .show__location::before,
-.show ul:nth-child(5) .show__date::before,
-.show ul:nth-child(5) .show__venue::before,
-.show ul:nth-child(5) .show__location::before,
-.show ul:nth-child(6) .show__date::before,
-.show ul:nth-child(6) .show__venue::before,
-.show ul:nth-child(6) .show__location::before,
-.show ul:nth-child(7) .show__date::before,
-.show ul:nth-child(7) .show__venue::before,
-.show ul:nth-child(7) .show__location::before {
-  visibility: hidden;
+@media screen and (min-width: 768px) {
+  .show ul:nth-child(2) .show__date::before,
+  .show ul:nth-child(2) .show__venue::before,
+  .show ul:nth-child(2) .show__location::before,
+  .show ul:nth-child(3) .show__date::before,
+  .show ul:nth-child(3) .show__venue::before,
+  .show ul:nth-child(3) .show__location::before,
+  .show ul:nth-child(4) .show__date::before,
+  .show ul:nth-child(4) .show__venue::before,
+  .show ul:nth-child(4) .show__location::before,
+  .show ul:nth-child(5) .show__date::before,
+  .show ul:nth-child(5) .show__venue::before,
+  .show ul:nth-child(5) .show__location::before,
+  .show ul:nth-child(6) .show__date::before,
+  .show ul:nth-child(6) .show__venue::before,
+  .show ul:nth-child(6) .show__location::before {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .show div {
+    width: 80%;
+  }
 }
 
 .footer {

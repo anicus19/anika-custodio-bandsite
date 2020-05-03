@@ -36,11 +36,13 @@ const showTitle = document.createElement("h2");
 showTitle.classList.add("show__title");
 showTitle.innerText = "Shows";
 showList.appendChild(showTitle);
+const showWrapper = document.createElement("div");
+showList.appendChild(showWrapper);
 
 showArray.forEach(function (item, index) {
   const ul = document.createElement("ul");
   ul.classList.add("show__list-item");
-  showList.appendChild(ul);
+  showWrapper.appendChild(ul);
 
   const showDate = document.createElement("li");
   showDate.classList.add("show__date");

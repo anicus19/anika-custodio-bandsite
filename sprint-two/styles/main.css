@@ -557,7 +557,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .banner--shows {
-    height: 800px;
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner--shows .banner__title {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -565,13 +572,21 @@ body {
   color: #ffffff;
   font-family: "Avenir Next Demi";
   font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .banner p {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
 }
 
 .banner--shows iframe {
   margin: 25px 0;
-  border-radius: 7%;
+  border-radius: 5px;
   width: 95%;
-  height: auto;
+  height: 125px;
 }
 
 @media screen and (min-width: 768px) {
@@ -824,6 +839,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .comments__title {
+    padding-left: 6%;
+  }
+}
+
 .comments__form {
   width: 82%;
   display: -webkit-box;
@@ -833,6 +854,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__form {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__form {
+    width: 80%;
+  }
 }
 
 .comments__form label {
@@ -867,10 +900,22 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .comments__user-input {
+    width: 56%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .comments__history {
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .comments__history {
+    width: 70%;
   }
 }
 
@@ -928,6 +973,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .form__button {
+    width: 30%;
+  }
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,6 +986,13 @@ body {
   width: 100%;
   padding-top: 25px;
   border-bottom: 2px solid #e1e1e1;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .grey-circle {
@@ -947,7 +1005,7 @@ body {
 }
 
 .list-item {
-  width: 95%;
+  width: 85%;
   list-style-type: none;
   padding-left: 0;
   font-size: 0.97rem;

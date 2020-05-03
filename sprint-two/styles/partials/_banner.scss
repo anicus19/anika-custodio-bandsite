@@ -43,21 +43,32 @@
     url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
   height: 500px;
   @include tablet {
-    height: 800px;
+    height: 700px;
   }
 }
 
+.banner--shows .banner__title {
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 .banner p {
   color: $banner-title-color;
   font-family: $font-family-demi;
   font-size: 1rem;
+  margin-bottom: 0;
+  @include tablet {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
 }
 
 .banner--shows iframe {
   margin: 25px 0;
-  border-radius: 7%;
+  border-radius: 5px;
   width: 95%;
-  height: auto;
+  height: 125px;
   @include tablet {
     width: 50%;
   }
