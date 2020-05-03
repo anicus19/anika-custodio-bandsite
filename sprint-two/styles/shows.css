@@ -555,6 +555,12 @@ body {
   height: 500px;
 }
 
+@media screen and (min-width: 768px) {
+  .banner--shows {
+    height: 800px;
+  }
+}
+
 .banner p {
   color: #ffffff;
   font-family: "Avenir Next Demi";
@@ -566,6 +572,12 @@ body {
   border-radius: 7%;
   width: 95%;
   height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .banner--shows iframe {
+    width: 50%;
+  }
 }
 
 .show {
@@ -590,6 +602,17 @@ body {
   padding-top: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .show__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
 .show__date, .show__venue, .show__location {
   padding-top: 5px;
   padding-bottom: 20px;
@@ -602,6 +625,12 @@ body {
           flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .show__date, .show__venue, .show__location {
+    width: 25%;
+  }
+}
+
 .show__date {
   font-family: "Avenir Next Demi";
 }
@@ -611,6 +640,12 @@ body {
   font-family: "Avenir Next Demi";
   text-transform: uppercase;
   padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__date::before, .show__venue::before, .show__location::before {
+    margin-bottom: 20px;
+  }
 }
 
 .show__date::before {
@@ -633,6 +668,32 @@ body {
   color: #ffffff;
   font-family: "Avenir Next Demi";
   border-radius: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__button {
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+.show ul:nth-child(3) .show__date::before,
+.show ul:nth-child(3) .show__venue::before,
+.show ul:nth-child(3) .show__location::before,
+.show ul:nth-child(4) .show__date::before,
+.show ul:nth-child(4) .show__venue::before,
+.show ul:nth-child(4) .show__location::before,
+.show ul:nth-child(5) .show__date::before,
+.show ul:nth-child(5) .show__venue::before,
+.show ul:nth-child(5) .show__location::before,
+.show ul:nth-child(6) .show__date::before,
+.show ul:nth-child(6) .show__venue::before,
+.show ul:nth-child(6) .show__location::before,
+.show ul:nth-child(7) .show__date::before,
+.show ul:nth-child(7) .show__venue::before,
+.show ul:nth-child(7) .show__location::before {
+  visibility: hidden;
 }
 
 .footer {

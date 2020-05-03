@@ -47,6 +47,12 @@ body {
     padding-bottom: 20px;
     padding-left: 0;
     padding-top: 10px;
+    @include tablet {
+      display: flex;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
   }
   &__date,
   &__venue,
@@ -55,6 +61,9 @@ body {
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
+    @include tablet {
+      width: 25%;
+    }
   }
   &__date {
     font-family: $font-family-demi;
@@ -66,6 +75,9 @@ body {
     font-family: $font-family-demi;
     text-transform: uppercase;
     padding-bottom: 10px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
   }
   &__date::before {
     content: "date";
@@ -84,6 +96,27 @@ body {
     color: $shows-button-text;
     font-family: $font-family-demi;
     border-radius: 7px;
+    @include tablet {
+      width: 25%;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// .show__date::before ,
+// .show__venue::before,
+// .show__location::before
+
+.show ul:nth-child(3),
+.show ul:nth-child(4),
+.show ul:nth-child(5),
+.show ul:nth-child(6),
+.show ul:nth-child(7) {
+  .show__date::before,
+  .show__venue::before,
+  .show__location::before {
+    visibility: hidden;
   }
 }
 

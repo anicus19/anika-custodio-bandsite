@@ -555,6 +555,12 @@ body {
   height: 500px;
 }
 
+@media screen and (min-width: 768px) {
+  .banner--shows {
+    height: 800px;
+  }
+}
+
 .banner p {
   color: #ffffff;
   font-family: "Avenir Next Demi";
@@ -566,6 +572,12 @@ body {
   border-radius: 7%;
   width: 95%;
   height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .banner--shows iframe {
+    width: 50%;
+  }
 }
 
 .about {
@@ -587,6 +599,7 @@ body {
   .about__title {
     padding-left: 5%;
     text-align: left;
+    font-size: 2rem;
   }
 }
 
@@ -738,6 +751,7 @@ body {
   .gallery__title {
     padding-left: 2%;
     text-align: left;
+    font-size: 2rem;
   }
 }
 
@@ -804,8 +818,21 @@ body {
   font-family: "Avenir Next Bold";
 }
 
+@media screen and (min-width: 768px) {
+  .comments__title {
+    font-size: 2rem;
+  }
+}
+
 .comments__form {
   width: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .comments__form label {
@@ -829,6 +856,22 @@ body {
   padding-bottom: 30px;
   border-bottom: 2px solid #e1e1e1;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .comments__user-input {
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comments__history {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .form__name-input,
@@ -858,6 +901,16 @@ body {
   background-color: #fafafa;
 }
 
+.button-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .form__button {
   width: 95%;
   background-color: #323232;
@@ -867,6 +920,12 @@ body {
   font-family: "Avenir Next Demi";
   border-radius: 7px;
   margin-left: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .form__button {
+    width: 50%;
+  }
 }
 
 .wrapper {
@@ -888,7 +947,7 @@ body {
 }
 
 .list-item {
-  width: 80%;
+  width: 95%;
   list-style-type: none;
   padding-left: 0;
   font-size: 0.97rem;
@@ -909,10 +968,23 @@ body {
   padding-left: 5%;
 }
 
+@media screen and (min-width: 768px) {
+  .list-item__name {
+    width: 35%;
+  }
+}
+
 .list-item__date {
   color: #afafaf;
   width: 30%;
   text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  .list-item__date {
+    text-align: left;
+    width: 60%;
+  }
 }
 
 .list-item__comment {
