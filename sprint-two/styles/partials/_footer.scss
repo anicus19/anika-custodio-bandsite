@@ -106,16 +106,18 @@
     font-family: $font-family-demi;
     font-size: 1.2rem;
     line-height: 25px;
+    display: flex;
+    flex-direction: column;
     @include tablet {
       font-size: 1rem;
-      line-height: 35px;
-      line-height: 20px;
     }
   }
 
   &__more-info {
     font-size: 1rem;
     line-height: 25px;
+    display: flex;
+    flex-direction: column;
   }
 
   &__copyright {
@@ -138,4 +140,8 @@
       padding-right: 6px;
     }
   }
+}
+
+.footer__more-info .even-more-space {
+  line-height: 65px;
 }

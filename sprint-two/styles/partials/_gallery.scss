@@ -48,6 +48,8 @@
     filter: grayscale(100%);
     &:hover {
       filter: none;
+      transition-timing-function: ease-in-out;
+      transition: 0.5s;
     }
     @include tablet {
       width: 33.33%;

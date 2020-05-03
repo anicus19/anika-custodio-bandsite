@@ -542,6 +542,13 @@ body {
   text-align: left;
   color: #ffffff;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .banner--index {
@@ -906,19 +913,31 @@ body {
   font-family: "Avenir Next Demi";
   font-size: 1.2rem;
   line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
   .footer__contact-name {
     font-size: 1rem;
-    line-height: 35px;
-    line-height: 20px;
   }
 }
 
 .footer__more-info {
   font-size: 1rem;
   line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__copyright {
@@ -952,5 +971,9 @@ body {
   .footer__copyright p {
     padding-right: 6px;
   }
+}
+
+.footer__more-info .even-more-space {
+  line-height: 65px;
 }
 /*# sourceMappingURL=shows.css.map */
