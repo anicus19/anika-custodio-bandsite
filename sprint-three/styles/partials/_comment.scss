@@ -1,0 +1,168 @@
+.comments {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 45px;
+  &__title {
+    font-size: 1.69rem;
+    font-family: $font-family-bold;
+    @include tablet {
+      font-size: 2rem;
+    }
+    @include desktop {
+      padding-left: 6%;
+      font-size: 3rem;
+    }
+  }
+  &__form {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      width: 95%;
+    }
+    @include desktop {
+      width: 80%;
+    }
+  }
+  &__form label {
+    color: $shows-label-color;
+    font-family: $font-family-demi;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  & img {
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    border-radius: 50%;
+  }
+  &__user-input {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $shows-border-color;
+    width: 100%;
+    @include tablet {
+      padding-left: 3%;
+      padding-right: 3%;
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include desktop {
+      width: 56%;
+    }
+  }
+  &__history {
+    @include tablet {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include desktop {
+      width: 70%;
+    }
+  }
+}
+
+.form__name-input,
+.form__comment-input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  padding-left: 5%;
+}
+
+.form__name {
+  padding: 20px 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+.form__comment {
+  padding: 20px 10px;
+  border: 2px solid $shows-border-color;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__button {
+  width: 95%;
+  background-color: $shows-button-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $shows-button-text;
+  font-family: $font-family-demi;
+  border-radius: 7px;
+  margin-left: 5%;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 30%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  padding-top: 25px;
+  border-bottom: 2px solid $shows-border-color;
+  @include desktop {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.grey-circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.list-item {
+  width: 85%;
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.97rem;
+  padding-bottom: 25px;
+  padding-top: 0;
+}
+
+.list-item__name,
+.list-item__date {
+  display: inline-block;
+}
+
+.list-item__name {
+  font-family: $font-family-demi;
+  width: 65%;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  @include tablet {
+    width: 35%;
+  }
+}
+
+.list-item__date {
+  color: #afafaf;
+  width: 30%;
+  text-align: right;
+  @include tablet {
+    text-align: left;
+    width: 60%;
+  }
+}
+
+.list-item__comment {
+  line-height: 20px;
+  padding-left: 5%;
+}

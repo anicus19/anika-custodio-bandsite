@@ -1,0 +1,131 @@
+//
+// FOOTER
+//
+
+.footer {
+  width: 100%;
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  &__container {
+    @extend .container;
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+    @include desktop {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+  &__title {
+    margin-top: 0;
+    padding-top: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: $font-family-bold;
+    font-size: 2rem;
+    @include tablet {
+      width: 300px;
+      padding-top: 50px;
+      padding-right: 20px;
+    }
+    @include desktop {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 3rem;
+      width: 33.33%;
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 3%;
+    padding-right: 3%;
+    @include tablet {
+      width: 33.33%;
+      margin-top: 25px;
+    }
+  }
+  &__social img {
+    margin: 0 30px 20px 10px;
+    height: 30px;
+    @include tablet {
+      height: 20px;
+      margin-bottom: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  &__band-logo {
+    visibility: hidden;
+    @include tablet {
+      width: 150px;
+      visibility: visible;
+      margin-left: auto;
+      margin-right: 5%;
+      padding-top: 15px;
+    }
+    @include desktop {
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+  &__contact-info {
+    @extend .container;
+    list-style-type: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include desktop {
+      width: 65%;
+      padding-left: 10%;
+    }
+  }
+
+  &__contact-name {
+    font-family: $font-family-demi;
+    font-size: 1.2rem;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      font-size: 1rem;
+    }
+  }
+
+  &__more-info {
+    font-size: 1rem;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__copyright {
+    margin-top: 50px;
+    padding-left: 5%;
+    padding-bottom: 60px;
+    font-size: 1rem;
+    @include tablet {
+      display: flex;
+    }
+    @include desktop {
+      padding-left: 10%;
+    }
+  }
+  &__copyright p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 0;
+    @include tablet {
+      padding-right: 6px;
+    }
+  }
+}
+
+.footer__more-info .even-more-space {
+  line-height: 65px;
+}

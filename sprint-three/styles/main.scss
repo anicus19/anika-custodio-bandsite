@@ -1,0 +1,35 @@
+@import "./partials/normalize";
+@import "./partials/variable";
+@import "./partials/typography";
+@import "./partials/mixin";
+
+html {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-family-regular, sans-serif;
+  color: $text-color;
+  font-size: 16px;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Utility class that can be extended
+.container {
+  max-width: $desktop-bp;
+}
+
+@import "./partials/header";
+@import "./partials/banner";
+@import "./partials/about";
+@import "./partials/gallery";
+@import "./partials/comment";
+@import "./partials/footer";
