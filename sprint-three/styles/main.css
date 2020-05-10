@@ -377,7 +377,7 @@ body {
           box-sizing: border-box;
 }
 
-.container, .banner__title, .footer__container, .footer__contact-info {
+.container, .banner__title, .show, .footer__container, .footer__contact-info {
   max-width: 1440px;
 }
 
@@ -794,6 +794,173 @@ body {
 
 .about__band-info {
   padding: 0 3%;
+}
+
+.show {
+  margin-bottom: 45px;
+}
+
+@media screen and (min-width: 1440px) {
+  .show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.show__title {
+  margin-left: 5%;
+  font-family: "Avenir Next Bold";
+  font-size: 2rem;
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+@media screen and (min-width: 1440px) {
+  .show__title {
+    width: 20%;
+    font-size: 3rem;
+  }
+}
+
+.show__list-item {
+  list-style-type: none;
+  border-bottom: 2px solid #e1e1e1;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.show__date, .show__venue, .show__location {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .show__date, .show__venue, .show__location {
+    width: 25%;
+  }
+}
+
+.show__date {
+  font-family: "Avenir Next Demi";
+}
+
+.show__date::before, .show__venue::before, .show__location::before {
+  color: #afafaf;
+  font-family: "Avenir Next Demi";
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .show__date::before, .show__venue::before, .show__location::before {
+    margin-bottom: 20px;
+  }
+}
+
+.show__date::before {
+  content: "date";
+}
+
+.show__venue::before {
+  content: "venue";
+}
+
+.show__location::before {
+  content: "location";
+}
+
+.showbutton-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .showbutton-wrapper {
+    width: 25%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.showbuttoninner__wrapper {
+  width: 100%;
+}
+
+.show__button {
+  width: 290px;
+  background-color: #323232;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-family: "Avenir Next Demi";
+  border-radius: 7px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .show__button {
+    width: 172px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .show ul:nth-child(2) .show__date::before,
+  .show ul:nth-child(2) .show__venue::before,
+  .show ul:nth-child(2) .show__location::before,
+  .show ul:nth-child(3) .show__date::before,
+  .show ul:nth-child(3) .show__venue::before,
+  .show ul:nth-child(3) .show__location::before,
+  .show ul:nth-child(4) .show__date::before,
+  .show ul:nth-child(4) .show__venue::before,
+  .show ul:nth-child(4) .show__location::before,
+  .show ul:nth-child(5) .show__date::before,
+  .show ul:nth-child(5) .show__venue::before,
+  .show ul:nth-child(5) .show__location::before,
+  .show ul:nth-child(6) .show__date::before,
+  .show ul:nth-child(6) .show__venue::before,
+  .show ul:nth-child(6) .show__location::before {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .show div {
+    width: 80%;
+  }
 }
 
 .gallery {
