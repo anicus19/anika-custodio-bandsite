@@ -23,17 +23,6 @@
     }
   }
 
-  &__logo {
-    display: inline-block;
-    min-width: 45%;
-    @include tablet {
-      min-width: 25%;
-
-      margin-top: 10px;
-      height: 20px;
-    }
-  }
-
   &__nav {
     display: flex;
     flex-direction: row;
@@ -81,5 +70,23 @@
       border-color: $header-color-chosen;
       font-family: $font-family-demi;
     }
+  }
+}
+
+.logo-container {
+  width: 45%;
+  margin: 0 auto;
+  @include tablet {
+    width: 25%;
+    text-align: left;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  height: 22px;
+  @include tablet {
+    margin-top: 10px;
+    height: 22px;
   }
 }

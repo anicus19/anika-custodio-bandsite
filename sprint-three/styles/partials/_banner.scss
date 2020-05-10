@@ -47,13 +47,10 @@
 .banner--shows {
   background-image: linear-gradient(RGBA(50, 50, 50, 0.3)),
     url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
-  // height: 500px;
-  // @include tablet {
-  //   height: 700px;
-  // }
-  // @include desktop {
-  //   height
-  // }
+  height: 500px;
+  @include tablet {
+    height: 700px;
+  }
 }
 
 .banner--shows .banner__title {

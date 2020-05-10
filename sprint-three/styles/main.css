@@ -416,19 +416,6 @@ body {
   }
 }
 
-.header__logo {
-  display: inline-block;
-  min-width: 45%;
-}
-
-@media screen and (min-width: 768px) {
-  .header__logo {
-    min-width: 25%;
-    margin-top: 10px;
-    height: 20px;
-  }
-}
-
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +487,30 @@ body {
   font-family: "Avenir Next Demi";
 }
 
+.logo-container {
+  width: 45%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-container {
+    width: 25%;
+    text-align: left;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-top: 10px;
+    height: 22px;
+  }
+}
+
 .banner {
   width: 100%;
   background-size: cover;
@@ -569,6 +580,13 @@ body {
 .banner--shows {
   background-image: -webkit-gradient(linear, left top, left bottom, from(RGBA(50, 50, 50, 0.3))), url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
   background-image: linear-gradient(RGBA(50, 50, 50, 0.3)), url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
+  height: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner--shows {
+    height: 700px;
+  }
 }
 
 .banner--shows .banner__title {
