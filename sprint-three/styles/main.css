@@ -502,7 +502,6 @@ body {
 
 .banner {
   width: 100%;
-  height: 335px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -524,7 +523,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .banner {
-    height: 425px;
     font-size: 1.9rem;
     line-height: 80px;
   }
@@ -534,7 +532,6 @@ body {
   .banner {
     margin: 0 auto;
     padding-left: 10%;
-    height: 500px;
   }
 }
 
@@ -554,18 +551,24 @@ body {
 .banner--index {
   background-image: -webkit-gradient(linear, left top, left bottom, from(RGBA(50, 50, 50, 0.2))), url(../assets/Images/concert-1.jpg);
   background-image: linear-gradient(RGBA(50, 50, 50, 0.2)), url(../assets/Images/concert-1.jpg);
+  height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner--index {
+    height: 470px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner--index {
+    height: 670px;
+  }
 }
 
 .banner--shows {
   background-image: -webkit-gradient(linear, left top, left bottom, from(RGBA(50, 50, 50, 0.3))), url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
   background-image: linear-gradient(RGBA(50, 50, 50, 0.3)), url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
-  height: 500px;
-}
-
-@media screen and (min-width: 768px) {
-  .banner--shows {
-    height: 700px;
-  }
 }
 
 .banner--shows .banner__title {

@@ -4,7 +4,6 @@
 
 .banner {
   width: 100%;
-  height: 335px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -16,14 +15,12 @@
   justify-content: center;
   padding-left: 5%;
   @include tablet {
-    height: 425px;
     font-size: 1.9rem;
     line-height: 80px;
   }
   @include desktop {
     margin: 0 auto;
     padding-left: 10%;
-    height: 500px;
   }
   &__title {
     @extend .container;
@@ -38,15 +35,25 @@
 .banner--index {
   background-image: linear-gradient(RGBA(50, 50, 50, 0.2)),
     url(../assets/Images/concert-1.jpg);
+  height: 250px;
+  @include tablet {
+    height: 470px;
+  }
+  @include desktop {
+    height: 670px;
+  }
 }
 
 .banner--shows {
   background-image: linear-gradient(RGBA(50, 50, 50, 0.3)),
     url(../assets/Images/matthew-kalapuch-sqJ4tLBiurw-unsplash.jpg);
-  height: 500px;
-  @include tablet {
-    height: 700px;
-  }
+  // height: 500px;
+  // @include tablet {
+  //   height: 700px;
+  // }
+  // @include desktop {
+  //   height
+  // }
 }
 
 .banner--shows .banner__title {
