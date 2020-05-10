@@ -31,7 +31,8 @@ function displayComment(commentArray) {
 
   commentHistory.innerHTML = "";
 
-  commentArray.forEach(function (item, index) {
+  // commentArray.forEach(function (item, index)
+  commentArray.forEach(function (data) {
     const wrapper = document.createElement("div");
     wrapper.classList.add("wrapper");
     commentHistory.appendChild(wrapper);
@@ -49,21 +50,55 @@ function displayComment(commentArray) {
     // Name
     const nameOnComment = document.createElement("li");
     nameOnComment.classList.add("list-item__name");
-    nameOnComment.innerHTML = commentArray[index].name;
+    nameOnComment.innerHTML = data.name;
     ul.appendChild(nameOnComment);
 
     // Time
     const dateOnComment = document.createElement("li");
     dateOnComment.classList.add("list-item__date");
-    dateOnComment.innerHTML = formatDate(commentArray[index].timestamp);
+    dateOnComment.innerHTML = formatDate(data.timestamp);
     ul.appendChild(dateOnComment);
 
     // Comment
     const commentOnComment = document.createElement("li");
     commentOnComment.classList.add("list-item__comment");
-    commentOnComment.innerHTML = commentArray[index].comment;
+    commentOnComment.innerHTML = data.comment;
     ul.appendChild(commentOnComment);
+
+    // Delete
+    const deleteOnComment = document.createElement("li");
+    deleteOnComment.classList.add("list-item__delete");
+    ul.appendChild(deleteOnComment);
+
+    const deleteWrapper = document.createElement("div");
+    deleteWrapper.classList.add("delete-wrapper");
+    deleteOnComment.appendChild(deleteWrapper);
+
+    const deleteButton = document.createElement("button");
+    console.log(data.id);
+    deleteButton.classList.add("delete-button");
+    deleteButton.innerText = "X";
+    deleteWrapper.appendChild(deleteButton);
+    deleteButton.addEventListener("click", function (event) {
+      deleteComment(data.id);
+    });
   });
+}
+
+// Deletes the comment
+function deleteComment(id) {
+  console.warn(id);
+  const deleteUrl = `https://project-1-api.herokuapp.com/comments/${id}?api_key=${apiKey}`;
+  console.log(deleteUrl);
+  return axios
+    .delete(deleteUrl)
+    .then((response) => {
+      console.log(response.id);
+      getData();
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
 
 // Creates the new comment

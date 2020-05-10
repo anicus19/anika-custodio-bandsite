@@ -135,7 +135,7 @@
   list-style-type: none;
   padding-left: 0;
   font-size: 0.97rem;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   padding-top: 0;
 }
 
@@ -157,7 +157,7 @@
 
 .list-item__date {
   color: #afafaf;
-  width: 30%;
+  width: 35%;
   text-align: right;
   @include tablet {
     text-align: left;
@@ -168,4 +168,21 @@
 .list-item__comment {
   line-height: 20px;
   padding-left: 5%;
+}
+
+.list-item__delete {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-button {
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  background-color: $shows-button-color;
+  padding-right: 13px;
+  color: $shows-button-text;
+  font-family: $font-family-demi;
+  border-radius: 5px;
 }

@@ -1247,7 +1247,7 @@ body {
   list-style-type: none;
   padding-left: 0;
   font-size: 0.97rem;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   padding-top: 0;
 }
 
@@ -1272,7 +1272,7 @@ body {
 
 .list-item__date {
   color: #afafaf;
-  width: 30%;
+  width: 35%;
   text-align: right;
 }
 
@@ -1286,6 +1286,27 @@ body {
 .list-item__comment {
   line-height: 20px;
   padding-left: 5%;
+}
+
+.list-item__delete {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.delete-button {
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  background-color: #323232;
+  padding-right: 13px;
+  color: #ffffff;
+  font-family: "Avenir Next Demi";
+  border-radius: 5px;
 }
 
 .footer {
