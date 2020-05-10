@@ -929,7 +929,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .comments__form {
-    width: 95%;
+    width: 600px;
   }
 }
 
@@ -966,7 +966,7 @@ body {
   .comments__user-input {
     padding-left: 3%;
     padding-right: 3%;
-    width: 80%;
+    width: 555px;
     margin: 0 auto;
   }
 }
@@ -979,7 +979,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .comments__history {
-    width: 80%;
+    width: 555px;
     margin: 0 auto;
   }
 }
