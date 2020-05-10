@@ -1,28 +1,22 @@
-// const commentArray = [
-//   {
-//     name: "Theodore Duncan",
-//     comment:
-//       "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!",
-//     date: new Date("11/15/2018"),
-//   },
-//   {
-//     name: "Gary Wong",
-//     comment:
-//       "Every time I see him shred I feel so motivated to get off my couch and hop on my board. He’s so talented! I wish I can ride like him one day so I can really enjoy myself!",
-//     date: new Date("12/12/2018"),
-//   },
-//   {
-//     name: "Michael Lyons",
-//     comment:
-//       "They BLEW the ROOF off at their last show, once everyone started figuring out they were going. This is still simply the greatest opening of a concert I have EVER witnessed.",
-//     date: new Date("12/18/2018"),
-//   },
-// ];
+const apiKey = "anika-custodio";
 
-// {
-// "api_key": "f7c85789-2015-42dc-8d40-b25121a06139"
-// }
-const apiKey = "f7c85789-2015-42dc-8d40-b25121a06139";
+const url = `https://project-1-api.herokuapp.com/comments?api_key=${apiKey}`;
+
+let commentArray = [];
+
+function getData() {
+  return axios
+    .get(url)
+    .then((response) => {
+      commentForm.reset();
+      displayComment(sortCommentArray(response.data));
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+getData();
 
 const commentHistory = document.querySelector(".comments__history");
 const commentForm = document.querySelector(".comments__form");
@@ -32,6 +26,8 @@ document
 
 // Displays the comments on the html page
 function displayComment(commentArray) {
+  console.log(commentArray);
+
   commentHistory.innerHTML = "";
 
   commentArray.forEach(function (item, index) {
@@ -55,7 +51,7 @@ function displayComment(commentArray) {
 
     const dateOnComment = document.createElement("li");
     dateOnComment.classList.add("list-item__date");
-    dateOnComment.innerHTML = formattedDate(commentArray[index].date);
+    dateOnComment.innerHTML = formatDate(commentArray[index].timestamp);
     ul.appendChild(dateOnComment);
 
     const commentOnComment = document.createElement("li");
@@ -76,14 +72,18 @@ function createNewComment(event) {
   console.log(newDate);
 
   if (newName !== "" && newComment !== "") {
-    commentArray.push({
-      name: newName,
-      comment: newComment,
-      date: newDate,
-    });
-
-    commentForm.reset();
-    displayComment(sortCommentArray(commentArray));
+    axios
+      .post(url, {
+        name: newName,
+        comment: newComment,
+      })
+      .then((response) => {
+        console.log(response);
+        getData();
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   } else {
     alert("Please add a name and message");
   }
@@ -91,16 +91,16 @@ function createNewComment(event) {
 
 // Sorts the array by date
 function sortCommentArray(array) {
-  const sortComments = array.slice().sort((a, b) => b.date - a.date);
+  console.log(array);
+  const sortComments = array.slice().sort((a, b) => b.timestamp - a.timestamp);
   return sortComments;
 }
 
 // Formats the date MM/DD/YYYY
-function formattedDate(date) {
-  const formattedDate = `${
-    date.getMonth() + 1
-  }/${date.getDate()}/${date.getFullYear()}`;
+function formatDate(date) {
+  console.log(date);
+  const d = new Date(date);
+  console.log(d);
+  const formattedDate = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
   return formattedDate;
 }
-
-displayComment(sortCommentArray(commentArray));
