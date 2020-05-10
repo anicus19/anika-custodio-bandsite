@@ -759,19 +759,42 @@ body {
   content: "location";
 }
 
-.show__button {
+.showbutton-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .showbutton-wrapper {
+    width: 25%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.showbuttoninner__wrapper {
   width: 100%;
+}
+
+.show__button {
+  width: 290px;
   background-color: #323232;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #ffffff;
   font-family: "Avenir Next Demi";
   border-radius: 7px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .show__button {
-    width: 25%;
+    width: 172px;
     margin-top: 30px;
     margin-bottom: 15px;
   }

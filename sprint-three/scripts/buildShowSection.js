@@ -46,10 +46,18 @@ function displayShow(showArray) {
     showLocation.innerHTML = show.location;
     ul.appendChild(showLocation);
 
+    const buttonWrapper = document.createElement("li");
+    buttonWrapper.classList.add("showbutton-wrapper");
+    ul.appendChild(buttonWrapper);
+
+    const buttonInnerWrapper = document.createElement("div");
+    buttonInnerWrapper.classList.add("showbuttoninner-wrapper");
+    buttonWrapper.appendChild(buttonInnerWrapper);
+
     const showButton = document.createElement("button");
     showButton.classList.add("show__button");
     showButton.classList.add("button");
     showButton.innerText = "BUY TICKETS";
-    ul.appendChild(showButton);
+    buttonInnerWrapper.appendChild(showButton);
   });
 }

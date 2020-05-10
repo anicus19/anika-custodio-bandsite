@@ -69,19 +69,36 @@
   &__location::before {
     content: "location";
   }
-  &__button {
-    width: 100%;
-    background-color: $shows-button-color;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: $shows-button-text;
-    font-family: $font-family-demi;
-    border-radius: 7px;
-    @include tablet {
-      width: 25%;
-      margin-top: 30px;
-      margin-bottom: 15px;
-    }
+}
+
+.showbutton-wrapper {
+  // width: 25%;
+  display: flex;
+  justify-content: center;
+  @include tablet {
+    width: 25%;
+    // display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.showbuttoninner__wrapper {
+  width: 100%;
+}
+
+.show__button {
+  width: 290px;
+  background-color: $shows-button-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $shows-button-text;
+  font-family: $font-family-demi;
+  border-radius: 7px;
+  margin: 0 auto;
+  @include tablet {
+    width: 172px;
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
 }
 
