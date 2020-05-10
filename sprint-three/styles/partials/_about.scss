@@ -47,6 +47,7 @@
     font-family: $font-family-demi;
     font-size: 1rem;
     line-height: 25px;
+    margin-bottom: 0;
     @include tablet {
       padding-left: 5%;
       padding-right: 5%;
@@ -63,7 +64,7 @@
   &__band-member-name {
     font-family: $font-family-bold;
     font-size: 1rem;
-    margin-top: 45px;
+    // margin-top: 25px;
     padding-left: 5%;
     padding-right: 5%;
     @include tablet {
@@ -98,6 +99,7 @@
 }
 
 .even-more-space {
+  display: inline-block;
   line-height: 65px;
   @include tablet {
     font-size: 1rem;

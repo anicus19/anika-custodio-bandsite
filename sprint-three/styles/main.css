@@ -724,6 +724,7 @@ body {
   font-family: "Avenir Next Demi";
   font-size: 1rem;
   line-height: 25px;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -746,7 +747,6 @@ body {
 .about__band-member-name {
   font-family: "Avenir Next Bold";
   font-size: 1rem;
-  margin-top: 45px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -798,6 +798,7 @@ body {
 }
 
 .even-more-space {
+  display: inline-block;
   line-height: 65px;
 }
 
