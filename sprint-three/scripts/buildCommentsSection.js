@@ -4,6 +4,7 @@ const url = `https://project-1-api.herokuapp.com/comments?api_key=${apiKey}`;
 
 let commentArray = [];
 
+// gets the Data from the api and then displays the sorted comment
 function getData() {
   return axios
     .get(url)
@@ -35,6 +36,7 @@ function displayComment(commentArray) {
     wrapper.classList.add("wrapper");
     commentHistory.appendChild(wrapper);
 
+    // Grey circle
     const greyCircle = document.createElement("div");
     greyCircle.classList.add("grey-circle");
     greyCircle.innerHTML = "";
@@ -44,16 +46,19 @@ function displayComment(commentArray) {
     ul.classList.add("list-item");
     wrapper.appendChild(ul);
 
+    // Name
     const nameOnComment = document.createElement("li");
     nameOnComment.classList.add("list-item__name");
     nameOnComment.innerHTML = commentArray[index].name;
     ul.appendChild(nameOnComment);
 
+    // Time
     const dateOnComment = document.createElement("li");
     dateOnComment.classList.add("list-item__date");
     dateOnComment.innerHTML = formatDate(commentArray[index].timestamp);
     ul.appendChild(dateOnComment);
 
+    // Comment
     const commentOnComment = document.createElement("li");
     commentOnComment.classList.add("list-item__comment");
     commentOnComment.innerHTML = commentArray[index].comment;

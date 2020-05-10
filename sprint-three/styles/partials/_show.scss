@@ -49,6 +49,7 @@
   &__date {
     font-family: $font-family-demi;
   }
+  // labels
   &__date::before,
   &__venue::before,
   &__location::before {
@@ -72,12 +73,10 @@
 }
 
 .showbutton-wrapper {
-  // width: 25%;
   display: flex;
   justify-content: center;
   @include tablet {
     width: 25%;
-    // display: flex;
     justify-content: flex-end;
   }
 }
@@ -102,6 +101,7 @@
   }
 }
 
+// Keeps the label on first child and removes the label on n children
 .show ul:nth-child(2),
 .show ul:nth-child(3),
 .show ul:nth-child(4),
