@@ -37,7 +37,10 @@
       padding-right: 15%;
     }
   }
+
   &__quote {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
@@ -54,12 +57,6 @@
     @include desktop {
       padding-left: 15%;
       padding-right: 15%;
-    }
-  }
-
-  &__quote span {
-    @include tablet {
-      font-size: 1rem;
     }
   }
 
@@ -97,5 +94,12 @@
   }
   &__band-info {
     padding: 0 3%;
+  }
+}
+
+.even-more-space {
+  line-height: 65px;
+  @include tablet {
+    font-size: 1rem;
   }
 }
